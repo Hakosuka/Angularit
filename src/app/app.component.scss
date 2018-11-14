@@ -1,0 +1,12 @@
+.nav {
+    ul {
+        list-style-type: none;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    li {
+        border: 1px solid #bbb;
+        float: right;
+    }
+}

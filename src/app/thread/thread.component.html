@@ -1,0 +1,9 @@
+<ul class="thread_list">
+  <li *ngFor="let thread of thread_list">
+    <a routerLink="/Thread/get?thread_id={{thread.thread_id}}">
+      <span class="t_title">
+        {{thread.thread_title}}
+      </span>
+    </a>
+  </li>
+</ul>
