@@ -1,21 +1,28 @@
-.nav {
-    ul {
-        list-style-type: none;
-        position: fixed;
-        margin: 0;
-        top: 0;
-        background-color: #afafaf;
-    }
-    li {
-        display: inline;
-        margin-left: 2px;
-        border: 1px solid #bbb;
-    }
-    a {
-        padding: 8px;
-        text-align: center;
-    }
-    a:hover {
-        background-color: #f22;
-    }
+ul {
+    list-style-type: none;
+    position: fixed;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    width: 100%;
+    background-color: #64B5F6;
+}
+li {
+    float: left;
+    border-right: 1px solid #0942FF;
+} 
+li a {
+    padding: 8px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #0D47A1;
+}
+li a:hover {
+    background-color: #1E88E5;
+}
+#app-title {
+    margin-top: 2.5em; //Quickfix to stop the navbar giving me an aneurysm by covering content
 }
