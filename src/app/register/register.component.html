@@ -1,20 +1,26 @@
-<form [formGroup]="profileForm">
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
   <label>
     Email address:
     <input type="email" formControlName="emailAddr" required>
   </label>
+
   <label>
     Name:
     <input type="text" formControlName="name" required>
   </label>
+
   <label>
     Username:
     <input type="text" formControlName="username" required>
   </label>
+
   <label>
     Password:
     <input type="password" formControlName="pWord" required>
   </label>
 </form>
-<button (click)="register()">Register now!</button>
+
+<!--Prevents the user from registering if they've forgotten something-->
+<!--TODO: Implement validation-->
+<button type="submit" [disabled]="!profileForm.valid">Register now!</button>
 
