@@ -1,5 +1,4 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<ul class=#nav>
+<ul class="nav">
   <li><a [routerLink]="'Account/login'">Login</a></li>
   <li><a [routerLink]="'Account/register'">Register</a></li>
 </ul>
@@ -8,5 +7,7 @@
     Welcome to {{ title }}!
   </h1>
 </div>
-
-<router-outlet></router-outlet>
+<div>
+  <!--TODO: Dialog box for registration/login-->
+  <router-outlet></router-outlet>
+</div>

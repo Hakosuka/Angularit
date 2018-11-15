@@ -5,9 +5,9 @@ import { AccountComponent } from './account/account.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 
-const baseUrl: string = 'https://cc18594.whatsalon.com/api/';
+
 const routes: Routes = [
-  { path: '', redirectTo: 'Thread'},
+  //TODO: Populate Thread { path: '', redirectTo: 'Thread'},
   { path: 'Thread/get?thread_id=:id', component: ThreadComponent},
   { path: 'Account/get_user_profile?user_id=:id', component: AccountComponent},
   { path: 'Account/register', component: RegisterComponent},

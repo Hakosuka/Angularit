@@ -2,11 +2,20 @@
     ul {
         list-style-type: none;
         position: fixed;
+        margin: 0;
         top: 0;
-        width: 100%;
+        background-color: #afafaf;
     }
     li {
+        display: inline;
+        margin-left: 2px;
         border: 1px solid #bbb;
-        float: right;
+    }
+    a {
+        padding: 8px;
+        text-align: center;
+    }
+    a:hover {
+        background-color: #f22;
     }
 }
